@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lemon Carpenter & Repair</title>
+<style>
+body{font-family:Arial;margin:0;background:#f5f5f5;color:#222}header{background:#111;color:white;text-align:center;padding:25px 15px}main{max-width:650px;margin:18px auto;background:white;padding:20px;border-radius:16px}label{display:block;font-weight:bold;margin-top:14px}input,select,textarea{width:100%;box-sizing:border-box;padding:12px;margin-top:6px;border:1px solid #ccc;border-radius:9px;font-size:16px}button,a{display:block;width:100%;box-sizing:border-box;padding:14px;margin-top:18px;border:0;border-radius:9px;text-align:center;font-weight:bold;font-size:17px;text-decoration:none}button{background:#111;color:white}.pay{background:#6f2dbd;color:white}.small{color:#666}
+</style></head>
+<body>
+<header><h1>🪚 Lemon Carpenter & Repair</h1><div>Carpenter • Furniture • Repair • Chandrapur</div></header>
+<main><h2>Online Booking</h2><p class="small">घर/दुकान पर carpenter और furniture repair service की booking करें।</p>
+<form id="f">
+<label>आपका नाम</label><input id="n" required>
+<label>मोबाइल नंबर</label><input id="p" type="tel" required>
+<label>Service</label><select id="s"><option>Furniture Repair</option><option>Carpenter Work</option><option>Modular Kitchen Repair</option><option>Door/Window Repair</option><option>Other</option></select>
+<label>काम का विवरण</label><textarea id="d" rows="4"></textarea>
+<label>Address</label><textarea id="a" rows="3" required></textarea>
+<label>Date</label><input id="dt" type="date" required>
+<label>Preferred Time</label><input id="t" type="time" required>
+<button>Booking WhatsApp पर भेजें</button></form>
+<a class="pay" href="upi://pay?pa=bljangid55@ybl&pn=Lemon%20Carpenter%20%26%20Repair&cu=INR">💳 Advance Payment — UPI</a>
+<p class="small">UPI: bljangid55@ybl<br>Mahatma Fule Chowk, Ramnagar, Chandrapur, Maharashtra</p>
+</main>
+<script>
+f.onsubmit=e=>{e.preventDefault();let m=`Lemon Carpenter & Repair Booking\n\nनाम: ${n.value}\nमोबाइल: ${p.value}\nService: ${s.value}\nकाम: ${d.value}\nAddress: ${a.value}\nDate: ${dt.value}\nTime: ${t.value}`;location.href='https://wa.me/?text='+encodeURIComponent(m)}
+</script></body></html>
