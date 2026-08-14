@@ -108,16 +108,22 @@ document.getElementById("date").valueAsDate=new Date();
 document.getElementById("booking").onsubmit=function(e){
 e.preventDefault();
 
-let msg=
-"🍋 LEMON CARPENTER & REPAIR - BOOKING\n\n"+
-"👤 नाम: "+name.value+"\n"+
-"📱 मोबाइल: "+phone.value+"\n"+
+let mlet msg=
+"🍋 LEMON CARPENTER & REPAIR\n"+
+"━━━━━━━━━━━━━━\n"+
+"📋 NEW BOOKING\n"+
+"━━━━━━━━━━━━━━\n\n"+
+"👤 Customer: "+name.value+"\n"+
+"📱 Mobile: "+phone.value+"\n"+
 "🛠️ Service: "+service.value+"\n"+
-"🔧 काम: "+work.value+"\n"+
+"🔧 Work: "+work.value+"\n"+
 "📍 Address: "+address.value+"\n"+
 "📅 Date: "+date.value+"\n"+
-"⏰ Time: "+time.value+"\n"+
-"💰 Advance: ₹300";
+"⏰ Time: "+time.value+"\n\n"+
+"💰 Booking Advance: ₹300\n"+
+"━━━━━━━━━━━━━━\n"+
+"🙏 Thank you for choosing Lemon Carpenter & Repair.";
+
 location.href="https://wa.me/919764119955?text="+encodeURIComponent(msg);
 }
 </script>
