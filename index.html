@@ -2,54 +2,35 @@
 <html lang="hi">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lemon Carpenter & Repair | Chandrapur</title>
-
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#111111">
+<link rel="manifest" href="manifest.webmanifest">
+<title>Lemon Carpenter & Repair</title>
 <style>
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;color:#222}
-header{background:#111;color:#fff;text-align:center;padding:28px 15px;border-bottom:5px solid #f5c400}
-header h1{margin:0 0 8px;font-size:28px}
-header b{color:#f5c400}
-header p{margin:8px 0 0;color:#ddd}
-main{max-width:700px;margin:auto;padding:16px}
-.card{background:#fff;padding:20px;border-radius:18px;margin-bottom:16px;box-shadow:0 3px 15px #0001}
-h2{margin-top:0}
-.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.item{padding:16px;border:1px solid #ddd;border-radius:13px;font-weight:bold;background:#fff}
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f5f5;color:#222}.wrap{max-width:720px;margin:auto}
+header{background:#111;color:#fff;padding:28px 18px 24px;text-align:center;border-bottom:5px solid #f5c400}
+h1{margin:0 0 7px;font-size:28px}header b{color:#f5c400}header p{margin:8px 0 0;color:#ddd}
+.card{background:#fff;margin:16px;padding:20px;border-radius:18px;box-shadow:0 3px 15px #0001}h2{margin:0 0 14px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.item{padding:15px;border:1px solid #ddd;border-radius:13px;font-weight:bold;background:#fff}
 .item span{display:block;font-size:25px;margin-bottom:6px}
-label{display:block;font-weight:bold;margin-top:14px}
-input,select,textarea{width:100%;padding:13px;margin-top:6px;border:1px solid #ccc;border-radius:10px;font-size:16px}
-button{width:100%;padding:15px;margin-top:18px;border:0;border-radius:10px;background:#159447;color:white;font-size:18px;font-weight:bold}
-.notice{background:#fff5c7;border:1px solid #e4c33c;padding:15px;border-radius:12px;line-height:1.5}
-.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.gallery img{width:100%;height:150px;object-fit:cover;border-radius:12px}
-.gallery .empty{grid-column:1/-1;text-align:center;padding:25px;background:#f5f5f5;border-radius:12px;color:#777}
-.admin{background:#111;color:white}
-.admin h2{color:#f5c400}
-.admin input{background:white}
-.admin button{background:#f5c400;color:#111}
-footer{text-align:center;color:#666;padding:20px}
-.small{font-size:13px;color:#777}
-hr{border:0;border-top:1px solid #eee;margin:20px 0}
+.notice{background:#fff5c7;border:1px solid #e4c33c;padding:14px;border-radius:12px;line-height:1.5}
+label{display:block;font-weight:bold;margin-top:13px}input,select,textarea{width:100%;padding:13px;margin-top:6px;border:1px solid #ccc;border-radius:10px;font-size:16px}
+button,.btn{width:100%;padding:15px;margin-top:16px;border:0;border-radius:11px;text-align:center;font-size:17px;font-weight:bold;text-decoration:none;display:block}
+.wa{background:#159447;color:#fff}.insta{background:#111;color:#fff}.small{color:#666;font-size:13px}.footer{text-align:center;color:#666;padding:8px 20px 30px}
+.sticky{position:sticky;bottom:10px;margin:0 16px 14px;background:#111;color:#fff;border-radius:16px;padding:12px;display:flex;gap:8px;z-index:5}.sticky a{flex:1;color:#fff;text-align:center;text-decoration:none;font-size:13px}
+@media(min-width:600px){.grid{grid-template-columns:repeat(3,1fr)}}
 </style>
 </head>
-
 <body>
-
+<div class="wrap">
 <header>
 <h1>🍋 <b>LEMON</b> Carpenter & Repair</h1>
 <div>Carpenter • Furniture • Repair • Interior</div>
 <p>📍 Chandrapur, Maharashtra</p>
 </header>
 
-<main>
-
-<!-- SERVICES -->
-
-<div class="card">
+<section class="card">
 <h2>🛠️ Repair & Carpenter Services</h2>
-
 <div class="grid">
 <div class="item"><span>🪚</span>Carpenter Work</div>
 <div class="item"><span>🛠️</span>Furniture Repair</div>
@@ -58,341 +39,108 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 <div class="item"><span>🔧</span>Furniture Fitting</div>
 <div class="item"><span>🏠</span>Other Repair</div>
 </div>
-</div>
+</section>
 
-
-<!-- REPAIR BOOKING -->
-
-<div class="card">
-
+<section class="card">
 <h2>📅 Repair Booking</h2>
-
-<div class="notice">
-💰 <b>Booking Advance: ₹300</b><br>
-Booking confirm करने के लिए ₹300 advance देना होगा।
-</div>
-
+<div class="notice">💰 <b>Booking Advance: ₹300</b><br>Booking confirm करने के लिए ₹300 advance देना होगा। Payment website पर नहीं लिया जा रहा है।</div>
 <form id="repairForm">
-
-<label>आपका नाम</label>
-<input id="repairName" required placeholder="नाम लिखें">
-
-<label>मोबाइल नंबर</label>
-<input id="repairPhone" type="tel" required placeholder="10 digit mobile number">
-
-<label>Service</label>
-<select id="repairService">
-<option>Furniture Repair</option>
-<option>Carpenter Work</option>
-<option>Door / Window Repair</option>
-<option>Bed / Sofa Repair</option>
-<option>Furniture Fitting</option>
-<option>Other Repair</option>
+<label>आपका नाम</label><input id="repairName" required>
+<label>मोबाइल नंबर</label><input id="repairPhone" type="tel" inputmode="numeric" maxlength="10" required>
+<label>Service</label><select id="repairService">
+<option>Furniture Repair</option><option>Carpenter Work</option><option>Door / Window Repair</option><option>Bed / Sofa Repair</option><option>Furniture Fitting</option><option>Other Repair</option>
 </select>
-
-<label>काम का विवरण</label>
-<textarea id="repairWork" rows="3" placeholder="क्या काम करवाना है?"></textarea>
-
-<label>Address</label>
-<textarea id="repairAddress" rows="3" required placeholder="पूरा पता"></textarea>
-
-<label>Date</label>
-<input id="repairDate" type="date" required>
-
-<label>Preferred Time</label>
-<select id="repairTime">
-<option>9 AM - 11 AM</option>
-<option>11 AM - 1 PM</option>
-<option>1 PM - 3 PM</option>
-<option>3 PM - 5 PM</option>
-<option>5 PM - 7 PM</option>
+<label>काम का विवरण</label><textarea id="repairWork" rows="3"></textarea>
+<label>Address</label><textarea id="repairAddress" rows="3" required></textarea>
+<label>Date</label><input id="repairDate" type="date" required>
+<label>Preferred Time</label><select id="repairTime">
+<option>9 AM - 11 AM</option><option>11 AM - 1 PM</option><option>1 PM - 3 PM</option><option>3 PM - 5 PM</option><option>5 PM - 7 PM</option>
 </select>
-
-<button type="submit">📲 Repair Booking WhatsApp पर भेजें</button>
-
+<button class="wa" type="submit">📲 Repair Booking WhatsApp पर भेजें</button>
 </form>
-</div>
+</section>
 
-
-<!-- NEW WORK -->
-
-<div class="card">
-
+<section class="card">
 <h2>🏠 New Furniture Work</h2>
-
-<p>नया furniture या interior work करवाना है? नीचे अपनी requirement भेजें।</p>
-
+<p class="small">नया furniture या interior करवाना है तो category चुनें और inquiry WhatsApp पर भेजें।</p>
 <div class="grid">
-
-<button type="button" onclick="newWork('Modular Kitchen')">
-🍳 Modular Kitchen
-</button>
-
-<button type="button" onclick="newWork('Bedroom Furniture')">
-🛏️ Bedroom
-</button>
-
-<button type="button" onclick="newWork('Living Room')">
-🛋️ Living Room
-</button>
-
-<button type="button" onclick="newWork('TV Unit')">
-📺 TV Unit
-</button>
-
-<button type="button" onclick="newWork('Wardrobe')">
-🚪 Wardrobe
-</button>
-
-<button type="button" onclick="newWork('Complete Home Interior')">
-🏠 Complete Interior
-</button>
-
-</<div class="card">
-<h2>📸 Our Work on Instagram</h2>
-
-<p style="font-weight:bold;">
-🏠 हमारे प्रोजेक्ट्स की झलक देखें
-</p>
-
-<p style="color:#666;">
-Lemon-1 Furniture
-</p>
-
-<a href="https://www.instagram.com/lemon.1.furniture/"
-target="_blank"
-style="display:block;text-align:center;background:#111;color:white;text-decoration:none;padding:15px;border-radius:10px;font-weight:bold;">
-📲 Instagram पर देखें
-</a>
+<button onclick="selectNew('Modular Kitchen')">🍳 Modular Kitchen</button>
+<button onclick="selectNew('Bedroom Furniture')">🛏️ Bedroom</button>
+<button onclick="selectNew('Living Room')">🛋️ Living Room</button>
+<button onclick="selectNew('TV Unit')">📺 TV Unit</button>
+<button onclick="selectNew('Wardrobe')">🚪 Wardrobe</button>
+<button onclick="selectNew('Complete Home Interior')">🏠 Complete Interior</button>
 </div>
+</section>
 
-
-</div>
-
-
-<!-- NEW WORK INQUIRY FORM -->
-
-<div class="card">
-
+<section class="card">
 <h2>✏️ New Work Inquiry</h2>
-
-<form id="newWorkForm">
-
-<label>आपका नाम</label>
-<input id="newName" required placeholder="नाम लिखें">
-
-<label>मोबाइल नंबर</label>
-<input id="newPhone" type="tel" required placeholder="10 digit mobile number">
-
-<label>काम का प्रकार</label>
-<select id="newService">
-<option>Modular Kitchen</option>
-<option>Bedroom Furniture</option>
-<option>Living Room</option>
-<option>TV Unit</option>
-<option>Wardrobe</option>
-<option>Complete Home Interior</option>
-<option>Other New Work</option>
+<form id="newForm">
+<label>आपका नाम</label><input id="newName" required>
+<label>मोबाइल नंबर</label><input id="newPhone" type="tel" inputmode="numeric" maxlength="10" required>
+<label>काम का प्रकार</label><select id="newService">
+<option>Modular Kitchen</option><option>Bedroom Furniture</option><option>Living Room</option><option>TV Unit</option><option>Wardrobe</option><option>Complete Home Interior</option><option>Other New Work</option>
 </select>
-
-<label>काम का विवरण</label>
-<textarea id="newDetails" rows="4" placeholder="आपको किस तरह का furniture/interior चाहिए?"></textarea>
-
-<label>काम की जगह / Address</label>
-<textarea id="newAddress" rows="3" required placeholder="Address"></textarea>
-
-<button type="submit">📲 New Work Inquiry WhatsApp पर भेजें</button>
-
+<label>Requirement</label><textarea id="newDetails" rows="4" placeholder="आपको किस तरह का furniture/interior चाहिए?"></textarea>
+<label>Address</label><textarea id="newAddress" rows="3" required></textarea>
+<button class="wa" type="submit">📲 New Work Inquiry WhatsApp पर भेजें</button>
 </form>
+</section>
 
-</div>
+<section class="card">
+<h2>📸 Our Work on Instagram</h2>
+<p><b>🏠 हमारे प्रोजेक्ट्स की झलक देखें</b></p>
+<p class="small">Lemon-1 Furniture</p>
+<a class="btn insta" target="_blank" rel="noopener" href="https://www.instagram.com/lemon.1.furniture/">📲 Instagram पर देखें</a>
+</section>
 
-
-<!-- GALLERY -->
-
-<div class="card">
-
+<section class="card">
 <h2>📸 Our Recent Work</h2>
+<p class="small">नई photos और projects जल्द यहाँ जोड़े जाएंगे।</p>
+</section>
 
-<div class="gallery">
-
-<div class="empty">
-हमारे latest furniture work की photos जल्द यहाँ दिखाई देंगी।
+<div class="sticky">
+<a href="#repairForm">📅 Booking</a>
+<a href="https://wa.me/919764119955" target="_blank" rel="noopener">💬 WhatsApp</a>
+<a href="https://www.instagram.com/lemon.1.furniture/" target="_blank" rel="noopener">📸 Instagram</a>
 </div>
 
+<div class="footer">Lemon Carpenter & Repair<br>Chandrapur, Maharashtra<br>WhatsApp: 9764119955</div>
 </div>
-
-</div>
-
-
-<!-- ADMIN PANEL -->
-
-<div class="card admin">
-
-<h2>🔐 Admin Panel</h2>
-
-<p>यह section आपके future photo management के लिए है।</p>
-
-<label>Admin Password</label>
-<input id="adminPassword" type="password" placeholder="Password">
-
-<button type="button" onclick="adminLogin()">
-🔐 Admin Login
-</button>
-
-<p id="adminMessage" class="small"></p>
-
-<div id="adminArea" style="display:none">
-
-<hr>
-
-<h3>📸 Add Work Photo</h3>
-
-<input id="photoFile" type="file" accept="image/*">
-
-<label>Photo Category</label>
-
-<select id="photoCategory">
-<option>Modular Kitchen</option>
-<option>Bedroom</option>
-<option>Living Room</option>
-<option>TV Unit</option>
-<option>Wardrobe</option>
-<option>Other Work</option>
-</select>
-
-<button type="button" onclick="addPhoto()">
-➕ Add Photo
-</button>
-
-</div>
-
-</div>
-
-</main>
-
-
-<footer>
-Lemon Carpenter & Repair<br>
-Chandrapur, Maharashtra<br><br>
-📲 WhatsApp: 9764119955
-</footer>
-
 
 <script>
-
-const WHATSAPP="919764119955";
-
+const WA="919764119955";
 document.getElementById("repairDate").valueAsDate=new Date();
 
+function sendWA(msg){ window.location.href="https://wa.me/"+WA+"?text="+encodeURIComponent(msg); }
 
-/* REPAIR BOOKING */
-
-document.getElementById("repairForm").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-const msg=
-"🍋 LEMON CARPENTER & REPAIR\n"+
-"━━━━━━━━━━━━━━\n"+
-"📋 REPAIR BOOKING\n"+
-"━━━━━━━━━━━━━━\n\n"+
-"👤 Customer: "+document.getElementById("repairName").value+"\n"+
-"📱 Mobile: "+document.getElementById("repairPhone").value+"\n"+
-"🛠️ Service: "+document.getElementById("repairService").value+"\n"+
-"🔧 Work: "+document.getElementById("repairWork").value+"\n"+
-"📍 Address: "+document.getElementById("repairAddress").value+"\n"+
-"📅 Date: "+document.getElementById("repairDate").value+"\n"+
-"⏰ Time: "+document.getElementById("repairTime").value+"\n\n"+
-"💰 Booking Advance: ₹300";
-
-window.location.href=
-"https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(msg);
-
+document.getElementById("repairForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const p=document.getElementById("repairPhone").value.trim();
+ if(!/^\d{10}$/.test(p)){alert("कृपया 10 digit mobile number डालें");return;}
+ const msg="🍋 LEMON CARPENTER & REPAIR\n━━━━━━━━━━━━━━\n📋 REPAIR BOOKING\n━━━━━━━━━━━━━━\n\n"+
+ "👤 Customer: "+repairName.value+"\n📱 Mobile: "+p+"\n🛠️ Service: "+repairService.value+
+ "\n🔧 Work: "+repairWork.value+"\n📍 Address: "+repairAddress.value+"\n📅 Date: "+repairDate.value+
+ "\n⏰ Time: "+repairTime.value+"\n\n💰 Booking Advance: ₹300";
+ sendWA(msg);
 });
 
+function selectNew(type){
+ document.getElementById("newService").value=type;
+ document.getElementById("newForm").scrollIntoView({behavior:"smooth"});
+}
 
-/* NEW WORK QUICK BUTTON */
-
-function newWork(type){
-
-document.getElementById("newService").value=type;
-
-document.getElementById("newWorkForm").scrollIntoView({
-behavior:"smooth"
+document.getElementById("newForm").addEventListener("submit",e=>{
+ e.preventDefault();
+ const p=document.getElementById("newPhone").value.trim();
+ if(!/^\d{10}$/.test(p)){alert("कृपया 10 digit mobile number डालें");return;}
+ const msg="🍋 LEMON CARPENTER & REPAIR\n━━━━━━━━━━━━━━\n🏠 NEW FURNITURE WORK INQUIRY\n━━━━━━━━━━━━━━\n\n"+
+ "👤 Customer: "+newName.value+"\n📱 Mobile: "+p+"\n🏠 Work Type: "+newService.value+
+ "\n📝 Requirement: "+newDetails.value+"\n📍 Address: "+newAddress.value;
+ sendWA(msg);
 });
 
-}
-
-
-/* NEW WORK INQUIRY */
-
-document.getElementById("newWorkForm").addEventListener("submit",function(e){
-
-e.preventDefault();
-
-const msg=
-"🍋 LEMON CARPENTER & REPAIR\n"+
-"━━━━━━━━━━━━━━\n"+
-"🏠 NEW FURNITURE WORK INQUIRY\n"+
-"━━━━━━━━━━━━━━\n\n"+
-"👤 Customer: "+document.getElementById("newName").value+"\n"+
-"📱 Mobile: "+document.getElementById("newPhone").value+"\n"+
-"🏠 Work Type: "+document.getElementById("newService").value+"\n"+
-"📝 Requirement: "+document.getElementById("newDetails").value+"\n"+
-"📍 Address: "+document.getElementById("newAddress").value;
-
-window.location.href=
-"https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(msg);
-
-});
-
-
-/* SIMPLE ADMIN DEMO */
-
-function adminLogin(){
-
-const password=document.getElementById("adminPassword").value;
-
-if(password==="Lemon300"){
-
-document.getElementById("adminArea").style.display="block";
-
-document.getElementById("adminMessage").innerText=
-"✅ Admin Panel Open";
-
-}else{
-
-document.getElementById("adminMessage").innerText=
-"❌ Wrong Password";
-
-}
-
-}
-
-
-/* PHOTO PREVIEW DEMO */
-
-function addPhoto(){
-
-const file=document.getElementById("photoFile").files[0];
-
-if(!file){
-
-alert("पहले photo select करें");
-
-return;
-
-}
-
-alert(
-"Photo select हो गई है।\n\n"+
-"Online permanent photo upload के लिए अगले step में secure storage/backend जोड़ना होगा।"
-);
-
-}
-
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));}
 </script>
-
 </body>
 </html>
