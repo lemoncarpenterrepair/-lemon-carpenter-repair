@@ -1,0 +1,12 @@
+{
+  "name": "Lemon Carpenter & Repair",
+  "short_name": "Lemon Carpenter",
+  "description": "Carpenter, furniture and interior booking service in Chandrapur",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#ffffff",
+  "theme_color": "#198754",
+  "lang": "hi"
+}
