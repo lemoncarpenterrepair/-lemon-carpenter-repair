@@ -1,24 +1,127 @@
 <!doctype html>
-<html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Lemon Carpenter & Repair</title>
 <style>
-body{font-family:Arial;margin:0;background:#f5f5f5;color:#222}header{background:#111;color:white;text-align:center;padding:25px 15px}main{max-width:650px;margin:18px auto;background:white;padding:20px;border-radius:16px}label{display:block;font-weight:bold;margin-top:14px}input,select,textarea{width:100%;box-sizing:border-box;padding:12px;margin-top:6px;border:1px solid #ccc;border-radius:9px;font-size:16px}button,a{display:block;width:100%;box-sizing:border-box;padding:14px;margin-top:18px;border:0;border-radius:9px;text-align:center;font-weight:bold;font-size:17px;text-decoration:none}button{background:#111;color:white}.pay{background:#6f2dbd;color:white}.small{color:#666}
-</style></head>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial;background:#f5f5f5;color:#222}
+header{background:#111;color:white;text-align:center;padding:28px 15px;border-bottom:5px solid #f5c400}
+header h1{margin:0 0 8px;font-size:28px}
+header b{color:#f5c400}
+main{max-width:650px;margin:16px auto;padding:16px}
+.card{background:white;padding:20px;border-radius:18px;margin-bottom:16px;box-shadow:0 3px 15px #0001}
+h2{margin-top:0}
+.services{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.service{padding:15px;border:1px solid #ddd;border-radius:12px;font-weight:bold}
+label{display:block;font-weight:bold;margin-top:14px}
+input,select,textarea{width:100%;padding:13px;margin-top:6px;border:1px solid #ccc;border-radius:10px;font-size:16px}
+button{width:100%;padding:15px;margin-top:18px;border:0;border-radius:10px;background:#159447;color:white;font-size:18px;font-weight:bold}
+.notice{background:#fff5c7;border:1px solid #e4c33c;padding:15px;border-radius:12px;line-height:1.5}
+footer{text-align:center;color:#666;padding:20px}
+</style>
+</head>
+
 <body>
-<header><h1>🪚 Lemon Carpenter & Repair</h1><div>Carpenter • Furniture • Repair • Chandrapur</div></header>
-<main><h2>Online Booking</h2><p class="small">घर/दुकान पर carpenter और furniture repair service की booking करें।</p>
-<form id="f">
-<label>आपका नाम</label><input id="n" required>
-<label>मोबाइल नंबर</label><input id="p" type="tel" required>
-<label>Service</label><select id="s"><option>Furniture Repair</option><option>Carpenter Work</option><option>Modular Kitchen Repair</option><option>Door/Window Repair</option><option>Other</option></select>
-<label>काम का विवरण</label><textarea id="d" rows="4"></textarea>
-<label>Address</label><textarea id="a" rows="3" required></textarea>
-<label>Date</label><input id="dt" type="date" required>
-<label>Preferred Time</label><input id="t" type="time" required>
-<button>Booking WhatsApp पर भेजें</button></form>
-<a class="pay" href="upi://pay?pa=bljangid55@ybl&pn=Lemon%20Carpenter%20%26%20Repair&cu=INR">💳 Advance Payment — UPI</a>
-<p class="small">UPI: bljangid55@ybl<br>Mahatma Fule Chowk, Ramnagar, Chandrapur, Maharashtra</p>
+
+<header>
+<h1>🍋 <b>LEMON</b> Carpenter & Repair</h1>
+<div>Carpenter • Furniture • Repair • Fitting</div>
+<p>📍 Chandrapur, Maharashtra</p>
+</header>
+
+<main>
+
+<div class="card">
+<h2>हमारी Services</h2>
+<div class="services">
+<div class="service">🪚 Carpenter Work</div>
+<div class="service">🛠️ Furniture Repair</div>
+<div class="service">🚪 Door / Window</div>
+<div class="service">🛏️ Bed / Sofa Repair</div>
+<div class="service">🔧 Furniture Fitting</div>
+<div class="service">🏠 Other Work</div>
+</div>
+</div>
+
+<div class="card">
+<h2>📅 Online Booking</h2>
+
+<div class="notice">
+💰 <b>Booking Advance: ₹500</b><br>
+Booking confirm करने के लिए ₹500 advance देना होगा।<br>
+Payment यहाँ नहीं लिया जा रहा है। Booking details WhatsApp पर भेजें।
+</div>
+
+<form id="booking">
+
+<label>आपका नाम</label>
+<input id="name" required placeholder="नाम लिखें">
+
+<label>मोबाइल नंबर</label>
+<input id="phone" type="tel" required placeholder="10 digit mobile number">
+
+<label>Service</label>
+<select id="service">
+<option>Furniture Repair</option>
+<option>Carpenter Work</option>
+<option>Door / Window Repair</option>
+<option>Bed / Sofa Repair</option>
+<option>Furniture Fitting</option>
+<option>Other Work</option>
+</select>
+
+<label>काम का विवरण</label>
+<textarea id="work" rows="3" placeholder="क्या काम करवाना है?"></textarea>
+
+<label>Address</label>
+<textarea id="address" rows="3" required placeholder="पूरा पता"></textarea>
+
+<label>Date</label>
+<input id="date" type="date" required>
+
+<label>Preferred Time</label>
+<select id="time">
+<option>9 AM - 11 AM</option>
+<option>11 AM - 1 PM</option>
+<option>1 PM - 3 PM</option>
+<option>3 PM - 5 PM</option>
+<option>5 PM - 7 PM</option>
+</select>
+
+<button type="submit">📲 WhatsApp पर Booking भेजें</button>
+
+</form>
+</div>
+
 </main>
+
+<footer>
+Lemon Carpenter & Repair<br>
+Chandrapur, Maharashtra
+</footer>
+
 <script>
-f.onsubmit=e=>{e.preventDefault();let m=`Lemon Carpenter & Repair Booking\n\nनाम: ${n.value}\nमोबाइल: ${p.value}\nService: ${s.value}\nकाम: ${d.value}\nAddress: ${a.value}\nDate: ${dt.value}\nTime: ${t.value}`;location.href='https://wa.me/?text='+encodeURIComponent(m)}
-</script></body></html>
+document.getElementById("date").valueAsDate=new Date();
+
+document.getElementById("booking").onsubmit=function(e){
+e.preventDefault();
+
+let msg=
+"🍋 LEMON CARPENTER & REPAIR - BOOKING\n\n"+
+"👤 नाम: "+name.value+"\n"+
+"📱 मोबाइल: "+phone.value+"\n"+
+"🛠️ Service: "+service.value+"\n"+
+"🔧 काम: "+work.value+"\n"+
+"📍 Address: "+address.value+"\n"+
+"📅 Date: "+date.value+"\n"+
+"⏰ Time: "+time.value+"\n"+
+"💰 Advance: ₹500";
+
+location.href="https://wa.me/?text="+encodeURIComponent(msg);
+}
+</script>
+
+</body>
+</html>
